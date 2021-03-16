@@ -717,7 +717,7 @@
  \null
  \setbox\@acmtitlebox\vbox{%
 \baselineskip 20pt
-\vskip 3em                   % Vertical space above title.
+\vskip 1.5em                   % Vertical space above title.
    \begin{center}
     {\ttlfnt \@title\par}       % Title set in 18pt Helvetica (Arial) bold size.
     \vskip 4em                % Vertical space after title.
@@ -1316,9 +1316,8 @@
 \bibindent=0em
 \def\thebibliography#1{% 
 \ifnum\addauflag=0\addauthorsection\global\addauflag=1\fi
-     \section[References]{%    <=== OPTIONAL ARGUMENT ADDED HERE
-        {References} % was uppercased but this affects pdf bookmarks (SP/GM October 2004)
-          {\vskip -2pt plus 1pt} % GM Nov. 2006 / GM July 2000 (for somewhat tighter spacing) 
+     \section*{%
+        {REFERENCES} % was uppercased but this affects pdf bookmarks (SP/GM October 2004)
          \@mkboth{{\refname}}{{\refname}}%
      }%
      \refsmall
