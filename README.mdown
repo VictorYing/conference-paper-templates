@@ -1,0 +1,8 @@
+# Conference paper templates
+
+Visit the branches in this repo, where each commit captures the contents of the
+LaTeX paper template and associated sample PDF from a particular conference's
+submission instructions.  This enables using git to compare paper templates and
+see how they have changed from one conference to another.
+
+Pull requests are welcome.
