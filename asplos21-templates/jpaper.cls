@@ -1,6 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-% \ProvidesClass{jpaper}[ASPLOS 2014 Submission template]
-\ProvidesClass{jpaper}[2012/08/02 ISCA Submission template]
+\ProvidesClass{jpaper}[ASPLOS 2021 Submission template]
 
 % jpaper provides two modes:
 % In addition to the usual options leqno and fleqn, jpaper also provides the
@@ -65,7 +64,7 @@
 \setlength{\droptitle}{-3.5em}
 
 \pretitle{\begin{center}\vspace{-.5in}
-ASPLOS Submission \#\asplossubmissionnumber -- Confidential Draft -- Do Not Distribute!!\\
+ASPLOS'21 Submission \#\asplossubmissionnumber -- Confidential Draft -- Do Not Distribute!!\\
 \vspace{.35in}
 \normalfont\Large\bfseries}
 \posttitle{\par\end{center}}
