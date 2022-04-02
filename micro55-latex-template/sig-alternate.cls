@@ -1013,6 +1013,8 @@
 %% NOTE: OK to use old-style font commands below, since they were
 %% suitably redefined for LaTeX2e
 %% END CHANGES
+%% CHANGES: Added spacing after (sub)section title. 
+%% END CHANGES
 \setcounter{secnumdepth}{3}
 \def\part{%
     \@startsection{part}{9}{\z@}{-10\p@ \@plus -4\p@ \@minus -2\p@}
@@ -1020,16 +1022,16 @@
 }
 \def\section{%
     \@startsection{section}{1}{\z@}{-10\p@ \@plus -4\p@ \@minus -2\p@}% GM
-    {4\p@}{\baselineskip 14pt\secfnt\@ucheadtrue}%
+    {15\p@}{\baselineskip 14pt\secfnt\@ucheadtrue}%
 }
 
 \def\subsection{%
     \@startsection{subsection}{2}{\z@}{-8\p@ \@plus -2\p@ \@minus -\p@}
-    {4\p@}{\secfnt}%
+    {15\p@}{\secfnt}%
 }
 \def\subsubsection{%
     \@startsection{subsubsection}{3}{\z@}{-8\p@ \@plus -2\p@ \@minus -\p@}%
-    {4\p@}{\subsecfnt}%
+    {14\p@}{\subsecfnt}%
 }
 %\def\paragraph{%
 %    \vskip 12pt\@startsection{paragraph}{3}{\z@}{6\p@ \@plus \p@}% original

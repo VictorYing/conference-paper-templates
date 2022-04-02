@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% This is the template for submission to MICRO 2021
+% This is the template for submission to MICRO 2022
 % The cls file is modified from 'sig-alternate.cls'
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -13,7 +13,7 @@
 \usepackage[final]{microtype}
 \usepackage[keeplastbox]{flushend}
 % Always include hyperref last
-\usepackage[bookmarks=true,breaklinks=true,letterpaper=true,colorlinks,linkcolor=black,citecolor=blue,urlcolor=black]{hyperref}
+\usepackage[bookmarks=true,breaklinks=true,letterpaper=true,colorlinks,citecolor=blue,linkcolor=blue,urlcolor=blue]{hyperref}
 
 % Ensure letter paper
 \pdfpagewidth=8.5in
@@ -26,15 +26,15 @@
 \fancypagestyle{firstpage}{
   \fancyhf{}
   \renewcommand{\headrulewidth}{0pt}
-  \fancyhead[C]{\vspace{15pt}\normalsize{MICRO 2021 Submission
-      \textbf{\#\microsubmissionnumber} -- Confidential Draft -- Do NOT Distribute!!}} 
+  \fancyhead[C]{\vspace{10pt}\normalsize{MICRO 2022 Submission
+      \textbf{\#\microsubmissionnumber} -- Confidential Draft -- Do NOT Distribute!!}\\\vspace{-25pt}} 
   \fancyfoot[C]{\thepage}
 }
 
 \pagenumbering{arabic}
 
 %%%%%%%%%%%---SETME-----%%%%%%%%%%%%%
-\title{Guidelines for Submission to MICRO 2021} 
+\title{Guidelines for Submission to MICRO 2022} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
@@ -48,13 +48,15 @@
 
 \begin{abstract}
 
-    This document is intended to serve as a sample for submissions to the 54th International Symposium on Microarchitecture~{\textregistered} (MICRO 2021). We provide some guidelines that authors should follow when submitting papers to the conference.  This format is derived from the ACM sig-alternate.cls file, and is used with an objective of keeping the submission version similar to the camera-ready version.
+  This document is intended to serve as a sample for submissions to the 55\textsuperscript{th} IEEE/ACM International Symposium on Microarchitecture\textsuperscript{\textregistered} (MICRO 2022). We provide some guidelines that authors should follow when submitting papers to the conference.  This format is derived from the ACM sig-alternate.cls file, and is used with an objective of keeping the submission version similar to the camera-ready version.
 
 \end{abstract}
 
 \section{Introduction}
 
-This document provides instructions for submitting papers to the 54th International Symposium on Microarchitecture~{\textregistered} (MICRO 2021).  In an effort to respect the efforts of reviewers and in the interest of fairness to all prospective authors, we request that all submissions to MICRO 2021 follow the formatting and submission rules detailed below. Submissions that violate these instructions may not be reviewed, at the discretion of the program chairs, in order to maintain a review process that is fair to all potential authors. This document is itself formatted using the MICRO 2021 submission format. The content of this document mirrors that of the submission instructions that appear on the conference website. All questions regarding paper formatting and submission should be directed to the program chairs.
+This document provides instructions for submitting papers to the 55\textsuperscript{th} IEEE/ACM International Symposium on Microarchitecture\textsuperscript{\textregistered} (MICRO 2022).  In an effort to respect the efforts of reviewers and in the interest of fairness to all prospective authors, we request that all submissions to MICRO 2022 follow the formatting and submission rules detailed below. Submissions that violate these instructions may not be reviewed, at the discretion of the program chairs, in order to maintain a review process that is fair to all potential authors. 
+
+This document is itself formatted using the MICRO 2022 submission format. The content of this document mirrors that of the submission instructions that appear on the conference website. All questions regarding paper formatting and submission should be directed to the program chairs.
 
 \subsection{Format Highlights}
 \begin{itemize}
@@ -63,9 +65,7 @@ This document provides instructions for submitting papers to the 54th Internatio
 \item Papers must be at most 11 pages, not including references.
 \item No page limit for references.
 \item Each reference must specify {\em all} authors (no {\em et al.}).
-\item Authors of {\em all} accepted papers will be required to give a
-lightning presentation (about 90s) in addition to the regular
-conference talk.
+\item Author anonymity must be fully preserved, including in any referenced artifacts (e.g., GitHub repository).
 \end{itemize}
 
 \subsection{Paper Evaluation Objectives} 
@@ -75,7 +75,7 @@ The committee will make every effort to judge each submitted paper on its own me
 
 \subsection{Paper Formatting}
 
-Papers must be submitted in printable PDF format and should contain a {\em maximum of 11 pages} of single-spaced two-column text, {\bf not including references}.  You may include any number of pages for references, but see below for more instructions.  If you are using \LaTeX~\cite{lamport94} to typeset your paper, then we suggest that you use the template here: \href{https://www.microarch.org/micro54/submit/micro54-latex-template.zip}{\LaTeX~Template}. This document was prepared with that template.  If you use a different software package to typeset your paper, then please adhere to the guidelines given in Table~\ref{table:formatting}. 
+Papers must be submitted in printable PDF format and should contain a {\em maximum of 11 pages} of single-spaced two-column text, {\bf not including references}.  You may include any number of pages for references, but see below for more instructions.  If you are using \LaTeX~\cite{lamport94} to typeset your paper, then we suggest that you use the template here: \href{https://www.microarch.org/micro55/submit/micro55-latex-template.zip}{\LaTeX~Template}. This document was prepared with that template. Note that the template and sample paper may render slightly differently on different \LaTeX~engines, due to typesetting changes between versions. If you use a different software package to typeset your paper, then please adhere to the guidelines given in Table~\ref{table:formatting}. 
 
 \begin{scriptsize}
 \begin{table}[h!]
@@ -129,7 +129,10 @@ Papers must be submitted in printable PDF format and should contain a {\em maxim
 
 \subsection{Content}
 
-Reviewing will be {\em double blind} (no author list); therefore, please do not include any author names on any submitted documents except in the space provided on the submission form.  You must also ensure that the metadata included in the PDF does not give away the authors. If you are improving upon your prior work, refer to your prior work in the third person and include a full citation for the work in the bibliography.  For example, if you are building on {\em your own} prior work in the papers \cite{nicepaper1,nicepaper2,nicepaper3}, you would say something like: "While the authors of \cite{nicepaper1,nicepaper2,nicepaper3} did X, Y, and Z, this paper additionally does W, and is therefore much better."  Do NOT omit or anonymize references for blind review.  There is one exception to this for your own prior work that appeared in IEEE CAL, arXiv, workshops without archived proceedings, etc.\, as discussed later in this document.
+Reviewing will be {\em double blind} (no author list); therefore, please do not include any author names on any submitted documents except in the space provided on the submission form.  You must also ensure that the metadata included in the PDF does not give away the authors. You must fully anonymize any links to artifacts (e.g., GitHub repository) and remove any links to artifacts that cannot be fully anonymized. {\bf Papers that violate the anonymization policy may be rejected without review} at the discretion of the program chairs.
+
+
+If you are improving upon your prior work, refer to your prior work in the third person and include a full citation for the work in the bibliography.  For example, if you are building on {\em your own} prior work in the papers \cite{nicepaper1,nicepaper2,nicepaper3}, you would say something like: "While the authors of \cite{nicepaper1,nicepaper2,nicepaper3} did X, Y, and Z, this paper additionally does W, and is therefore much better."  Do NOT omit or anonymize references for blind review.  There is one exception to this for your own prior work that appeared in IEEE CAL, arXiv, workshops without archived proceedings, etc.\, as discussed later in this document.
 
 \noindent\textbf{Figures and Tables:} Ensure that the figures and tables are legible.  Please also ensure that you refer to your figures in the main text.  Many reviewers print the papers in gray-scale. Therefore, if you use colors for your figures, ensure that the different colors are highly distinguishable in gray-scale.
 
@@ -157,20 +160,18 @@ Declare all the authors of the paper upfront. Addition/removal of authors once t
 Authors should indicate these areas on the submission form as well as specific topics covered by the paper for optimal reviewer match. If you are unsure whether your paper falls within the scope of MICRO, please check with the program chairs -- MICRO is a broad, multidisciplinary conference and encourages new topics.
 
 \subsection{Revision of Previously-Reviewed\\ Manuscript}
-If the manuscript has been previously reviewed and rejected and is now being submitted to MICRO, the authors are expected to provide a letter explaining how the paper has been revised for this current submission. Papers that have previously been reviewed and rejected that do not include a revision letter may be rejected without review. Note that it is not a requirement that papers be revised before being submitted to MICRO, but we expect a revision letter nonetheless, even if it states that the paper has not been revised. 
-
-We encourage you to keep this letter concise and append additional information, such as a version of the paper that highlights the differences or any other material of your choice. While {\bf this letter is required for submission (with a deadline that will be one week after the paper submission deadline)}, the authors have control about who and when this letter will be shared with, by specifying one of the following options:
+If the manuscript has been previously reviewed and rejected and is now being submitted to MICRO, the authors have an option of providing a letter explaining how the paper has been revised for this current submission. We expect this revision information to improve both the submission and the review process. Authors choosing to provide such a letter have control over who has access to it by specifying one of the following options:
 
 \begin{enumerate}
-\item Shared with all reviewers during the initial review process
-\item Shared with reviewers who declare that they reviewed a prior version and explicitly request the revision information
-\item Shared along with the rebuttal
-\item Shared only with paper discussion leads in preparation for PC discussion
-\item Not shared with any PC member 
+\item Shared with all reviewers of the paper 
+\item Shared with reviewers who declare that they reviewed a prior version and who request the revision information
+\item Not shared with any PC member but available to the program chairs
 \end{enumerate}
 
+We encourage you to keep this letter concise and optionally append additional information, such as a version of the paper that highlights the differences or any other material of your choice.
+
 \subsection{Declaring Conflicts of Interest}
-Authors must register all their conflicts for their paper submission. Conflicts are needed to ensure appropriate assignment of reviewers. {\bf If a paper is found to have an undeclared conflict that causes a problem OR if a paper is found to declare false conflicts in order to abuse or ``game'' the review system, the paper may be rejected without review.} We use the following conflict of interest guidelines for determining the conflict period for MICRO 2021.  Please declare a conflict of interest (COI) with the following people for any author of your paper:
+Authors must register all their conflicts for their paper submission. Conflicts are needed to ensure appropriate assignment of reviewers. {\bf If a paper is found to have an undeclared conflict that causes a problem OR if a paper is found to declare false conflicts in order to abuse or ``game'' the review system, the paper may be rejected without review.} We use the following conflict of interest guidelines for determining the conflict period for MICRO 2022.  Please declare a conflict of interest (COI) with the following people for any author of your paper:
 
 \begin{enumerate}
 \item Your Ph.D. advisor(s), post-doctoral advisor(s), Ph.D. students,
@@ -179,14 +180,12 @@ Authors must register all their conflicts for their paper submission. Conflicts 
       forever (if they might be potential reviewers).
 \item People with whom you have collaborated in the last FOUR years, including:
   \begin{itemize}
-  \item co-authors of accepted/rejected/pending papers,
-  \item co-PIs on accepted/rejected/pending grant proposals,
-  \item funders (decision makers) of your research grants, and researchers
-      whom you fund.
+  \item co-authors of accepted/rejected/pending papers
+  \item co-PIs on accepted/rejected/pending grant proposals
   \end{itemize}
-\item People (including students) who shared your primary institution(s) in the
-last FOUR years.
 \item Ongoing collaboration that has not yet resulted in a paper or proposal submission. Justification may be queried.
+\item When there is a direct funding relationship between an author and the potential reviewer (e.g., the reviewer is a sponsor of an author's research on behalf of his/her company or vice versa) in the last FOUR years.
+\item People (including students) who shared your primary institution(s) in the last FOUR years.
 \item Other relationships, such as close personal friendship, that you think might tend
 to affect your judgment or be seen as doing so by a reasonable person familiar
 with the relationship.
@@ -204,22 +203,32 @@ We would also like to emphasize that the following scenarios do {\em not} consti
 We hope to draw most reviewers from the program committee, but others
 from the community may also write reviews. {\bf Please declare all your conflicts (not just restricted to the PC).} When in doubt, please contact the program chairs.
 
-Please note that all paper submissions require all authors to electronically sign a statement confirming their best effort to accurately identify potential reviewers with a conflict of interest, and importantly also {\bf assuring that each author will make no explicit attempt to directly or indirectly influence any reviewer opinion or decision about the submitted paper}. Importantly, we do not consider technical discussion of a paper's content or any other sharing of content from the paper to violate the above policy. 
+%Please note that all paper submissions require all authors to electronically sign a statement confirming their best effort to accurately identify potential reviewers with a conflict of interest, and importantly also {\bf assuring that each author will make no explicit attempt to directly or indirectly influence any reviewer opinion or decision about the submitted paper}. Importantly, we do not consider technical discussion of a paper's content or any other sharing of content from the paper to violate the above policy. 
 
 
 \subsection{Concurrent Submissions and Workshops}
 
-By submitting a manuscript to MICRO 2021, the authors guarantee that the manuscript has not been previously published or accepted for publication in a substantially similar form in any conference, journal, or the archived proceedings of a workshop (e.g., in the ACM/IEEE digital library) -- see exceptions below. The authors also guarantee that no paper that contains significant overlap with the contributions of the submitted paper will be under review for any other conference or journal or an archived proceedings of a workshop during the MICRO 2021 review period. Violation of any of these conditions will lead to rejection.
+By submitting a manuscript to MICRO 2022, the authors guarantee that the manuscript has not been previously published or accepted for publication in a substantially similar form in any conference, journal, or the archived proceedings of a workshop (e.g., in the ACM/IEEE digital library) -- see exceptions below. The authors also guarantee that no paper that contains significant overlap with the contributions of the submitted paper will be under review for any other conference or journal or an archived proceedings of a workshop during the MICRO 2022 review period. Violation of any of these conditions will lead to rejection.
 
 The only exceptions to the above rules are for the authors' own papers in (1) workshops without archived proceedings such as in the ACM/IEEE digital library (or where the authors chose not to have their paper appear in the archived proceedings), or (2) venues such as IEEE CAL or arXiv where there is an explicit policy that such publication does not preclude longer conference submissions.  In all such cases, the submitted manuscript may ignore the above work to preserve author anonymity. This information must, however, be provided on the submission form -- the program chairs will make this information available to reviewers if it becomes necessary to ensure a fair review.  As always, if you are in doubt, it is best to contact the program chairs.
 
 
-Finally, the ACM/IEEE Plagiarism Policy (\href{http://www.acm.org/publications/policies/plagiarism_policy}{here} and \href{https://www.ieee.org/publications_standards/publications/rights/plagiarism_FAQ.html}{here}) covers a range of ethical issues concerning the misrepresentation of other works or one's own work.
+Finally, the ACM/IEEE Plagiarism Policy (\href{http://www.acm.org/publications/policies/plagiarism_policy}{here} and \href{https://www.ieee.org/publications_standards/publications/rights/plagiarism.html}{here}) covers a range of ethical issues concerning the misrepresentation of other works or one's own work.
+
+
+\section{Ethics}
+
+\begin{enumerate}
+\item Authors must abide by the ACM code of ethics and the IEEE code of ethics
+\item Authors must not contact reviewers or PC members about any submission, including their own. This includes attempting to sway a reviewer, requesting information about any aspect of the reviewing process, and/or asking about the outcome of a submission. Similarly, authors are not allowed to ask another party to contact the reviewers on their behalf.
+\item Authors must not disclose the content of reviews for their paper publicly (e.g., on social media)  before the results are announced. 
+\item Authors must report any allegations of submission or reviewing misconduct to the program chairs. The only exception is if the complaint is about the program chairs; in this case, the Steering Committee should be contacted. 
+\end{enumerate}
+
 
 \section*{ACKNOWLEDGMENTS}
-This document is derived from previous conferences, in particular
-MICRO 2013, ASPLOS 2015, MICRO 2015, MICRO 2016, MICRO 2017, MICRO
-2018, MICRO 2019, and MICRO 2020.
+This document is derived from previous conferences, in particular MICRO 2013, ASPLOS 2015, MICRO 2015, MICRO 2016, MICRO 2017, MICRO
+2018, MICRO 2019, MICRO 2020 and MICRO 2021, as well as SIGARCH/TCCA's Recommended Best Practices for the Conference Reviewing Process.
 
 
 %%%%%%% -- PAPER CONTENT ENDS -- %%%%%%%%
