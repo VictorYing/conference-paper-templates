@@ -2,7 +2,16 @@
 
 Visit the branches in this repo, where each commit captures the contents of the
 LaTeX paper template and associated sample PDF from a particular conference's
-submission instructions.  This enables using git to compare paper templates and
-see how they have changed from one conference to another.
+submission instructions.  Generally, the directory structure here consists of
+one directory containing the contents extracted from the conference's provided
+tarball or zip file (sometimes with unimportant files accidentally included in
+the archive by the conference organizers removed), and also included here in
+the root of this repo is the raw tarball/zip file as well as a copy of the
+sample PDF from the conference submission instructions webpage.
+
+The hope is to document how requirements have changed and, if we can organize
+the templates given to us consistently from year to year, this could sometimes
+enable using git to diff paper templates and see how they have changed from one
+conference to another.
 
 Pull requests are welcome.
