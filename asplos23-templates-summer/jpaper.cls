@@ -54,7 +54,7 @@
 % Page margins:
 % 3/4" left and right, 1" top, 1 1/8" bottom.
 \RequirePackage{geometry}
-\geometry{lmargin=1in,rmargin=1in,tmargin=1in,bmargin=1in}
+\geometry{lmargin=0.75in,rmargin=0.75in,tmargin=1in,bmargin=1in}
 
 % 1/4" space between columns.
 \setlength{\columnsep}{0.25in}
